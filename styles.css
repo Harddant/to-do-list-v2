@@ -23,6 +23,7 @@ body {
     width: 100%;
     overflow: hidden;
     padding: 30px;
+    display: flex;
 }
 
 @media (min-width:768px) {
@@ -32,6 +33,11 @@ body {
         border-radius: 40px;
         border: 10px solid #2e2e2e;
     }
+}
+
+.wrapper .screen {
+    flex: 1;
+    min-width: 100%
 }
 
 .screen-backdrop {
@@ -86,4 +92,13 @@ body {
     border-radius: 50%;
     background-color: #fdfbe5;
     z-index: -1;
+}
+
+.categories-wrapper {
+    margin-top: 1rem;
+    height: calc(100% - 8rem);
+    background-color: red;
+    padding: 0 30px;
+    padding-bottom: 20px;
+    overflow: auto;
 }
