@@ -336,10 +336,14 @@ body {
 
 .add-task {
     position: absolute;
-    bottom: 0;
+    bottom: -100%;
     left: 0;
     width: 100%;
     padding: 20px 30px;
+}
+
+.add-task .active {
+    bottom: 0;
 }
 
 .add-task .heading {
@@ -407,4 +411,16 @@ body {
     height: 20rem;
     border-radius: 50% 50% 0 0;
     background-color: #fff;
+}
+
+.black-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: #00000023;
+    opacity: 0;
+    visibility: hidden;
 }
